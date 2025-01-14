@@ -1,13 +1,26 @@
-Add some basic HTML code:
-html
-Copy code
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Welcome to Taher Khader's Game Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taher Khader's game (yes i made it) </title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, World! 🎮</h1>
-  <p>Welcome to my gaming website!</p>
+  <div class="center">
+    <img src="img/JMW.png" alt="Logo">
+    <h1>Taher Khader's game (yes i made it) </h1>
+    <h2>Play the Games you want!</h2>
+    <div class="openselect">
+      <button onclick="location.href='games.html'">Open Games in normal mode</button>
+      <button onclick="openAboutBlank()" class="btn">Open in about:blank (recommended)</button>
+    </div>
+    <div class="counter">
+      <a href="https://www.hitwebcounter.com" target="_blank">
+        <img src="https://hitwebcounter.com/counter/counter.php?page=8133209&style=0036&nbdigits=9&type=page&initCount=14623" title="Free Counter" alt="web counter">
+      </a>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
