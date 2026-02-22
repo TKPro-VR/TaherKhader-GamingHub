@@ -1,0 +1,10 @@
+{
+  "name": "Midnight Hallway Horror",
+  "short_name": "MidnightHall",
+  "start_url": "/horror.html",
+  "display": "standalone",
+  "background_color": "#050505",
+  "theme_color": "#0a0a0a",
+  "description": "A short horror survival hallway game.",
+  "icons": []
+}

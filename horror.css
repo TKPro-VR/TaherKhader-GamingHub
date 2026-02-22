@@ -1,0 +1,97 @@
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at center, #1a1a1a 0%, #050505 65%, #000 100%);
+  color: #f1f1f1;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+.game-shell {
+  width: min(92vw, 700px);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  opacity: 0.82;
+  margin-top: 0;
+}
+
+.hud {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0;
+  font-size: 0.95rem;
+}
+
+#restartBtn {
+  background: #6c1010;
+  border: 1px solid #a82a2a;
+  color: white;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+#restartBtn:hover {
+  background: #891616;
+}
+
+canvas {
+  width: 100%;
+  border: 1px solid #333;
+  background: #0a0a0a;
+  box-shadow: 0 0 18px rgba(164, 21, 21, 0.22);
+  touch-action: none;
+}
+
+.mobile-controls {
+  display: none;
+  margin: 0.8rem auto 0;
+  width: 220px;
+  height: 160px;
+  position: relative;
+}
+
+.ctrl {
+  position: absolute;
+  width: 62px;
+  height: 62px;
+  border-radius: 14px;
+  border: 1px solid #6e6e6e;
+  background: rgba(30, 30, 30, 0.88);
+  color: #f5f5f5;
+  font-size: 1.3rem;
+}
+
+.ctrl:active {
+  background: rgba(92, 25, 25, 0.9);
+}
+
+.up { top: 0; left: 79px; }
+.left { top: 49px; left: 0; }
+.down { top: 49px; left: 79px; }
+.right { top: 49px; right: 0; }
+
+.status {
+  margin-top: 0.8rem;
+  min-height: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .mobile-controls {
+    display: block;
+  }
+}
