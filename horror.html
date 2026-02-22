@@ -2,29 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="theme-color" content="#0a0a0a">
-  <title>Midnight Hallway - Horror Game</title>
-  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faznight Shift - 3D Free Roam</title>
   <link rel="stylesheet" href="horror.css">
 </head>
 <body>
-  <main class="game-shell">
-    <h1>Midnight Hallway</h1>
-    <p class="subtitle">Find all keys before the shadow catches you. Move with WASD, arrows, or touch controls.</p>
+  <main class="shell">
+    <h1>Faznight Shift</h1>
+    <p class="subtitle">FNAF-inspired 3D free roam demo. Find all battery cells, then reach the exit door.</p>
+
     <div class="hud">
-      <span>Keys: <strong id="keyCount">0</strong>/3</span>
-      <span>Time: <strong id="timer">0</strong>s</span>
+      <span>Cells: <strong id="cells">0</strong>/4</span>
+      <span>Power: <strong id="power">100</strong>%</span>
+      <span>Status: <strong id="status">Stay hidden.</strong></span>
       <button id="restartBtn" type="button">Restart</button>
     </div>
-    <canvas id="gameCanvas" width="640" height="400" aria-label="horror game canvas"></canvas>
-    <div class="mobile-controls" aria-label="touch controls">
-      <button data-key="ArrowUp" class="ctrl up">▲</button>
-      <button data-key="ArrowLeft" class="ctrl left">◀</button>
-      <button data-key="ArrowDown" class="ctrl down">▼</button>
-      <button data-key="ArrowRight" class="ctrl right">▶</button>
+
+    <canvas id="view" width="900" height="500" aria-label="3d game view"></canvas>
+
+    <div class="controls">
+      <p>Controls: <kbd>W A S D</kbd> move, <kbd>← →</kbd> look, <kbd>Shift</kbd> sprint.</p>
+      <div class="touch-grid" aria-label="touch controls">
+        <button data-key="ArrowLeft">⟲</button>
+        <button data-key="w">▲</button>
+        <button data-key="ArrowRight">⟳</button>
+        <button data-key="a">◀</button>
+        <button data-key="s">▼</button>
+        <button data-key="d">▶</button>
+      </div>
     </div>
-    <p id="status" class="status">Collect 3 keys and escape the night.</p>
   </main>
   <script src="horror.js"></script>
 </body>
