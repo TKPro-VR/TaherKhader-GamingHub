@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Midnight Hallway - Horror Game</title>
+  <link rel="stylesheet" href="horror.css">
+</head>
+<body>
+  <main class="game-shell">
+    <h1>Midnight Hallway</h1>
+    <p class="subtitle">Find all keys before the shadow catches you. Move with WASD or arrow keys.</p>
+    <div class="hud">
+      <span>Keys: <strong id="keyCount">0</strong>/3</span>
+      <span>Time: <strong id="timer">0</strong>s</span>
+      <button id="restartBtn" type="button">Restart</button>
+    </div>
+    <canvas id="gameCanvas" width="640" height="400" aria-label="horror game canvas"></canvas>
+    <p id="status" class="status">Collect 3 keys and escape the night.</p>
+  </main>
+  <script src="horror.js"></script>
+</body>
+</html>
